@@ -1,23 +1,22 @@
 import React from 'react'
-
 import { books } from '../data'
-
 import Book from './ui/Book'
 
-export default function Featured() {
+export default function Discounted() {
     return (
-        // Maybe change featured to features
-        <section id="featured">
+        <section id="recent">
             <div className="container">
                 <div className="row">
+                    {/* SECTION TITLE */}
                     <h2 className="section__title">
-                        Featured <span className="purple">Books</span>
+                        Discounted <span className="purple">Books</span>
                     </h2>
 
+                    {/* DISCOUNTED BOOKS */}
                     <div className="books">
                         {books
-                            .filter((book) => book.rating === 5)
-                            .slice(0, 4)
+                            .filter((book) => book.salePrice > 0)
+                            .slice(0, 8)
                             .map((book) => (
                                 <Book book={book} key={book.id} />
                             ))}
