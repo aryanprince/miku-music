@@ -5,18 +5,19 @@ import Footer from './components/Footer'
 import Highlights from './components/Highlights'
 import Landing from './components/Landing'
 import Nav from './components/Nav'
+import Home from './pages/Home'
+
+import { BrowserRouter as Router, Route } from 'react-router-dom'
 
 function App() {
     return (
-        <div className="App">
-            <Nav />
-            <Landing />
-            <Highlights />
-            <Featured />
-            <Discounted />
-            <Explore />
-            <Footer />
-        </div>
+        <Router>
+            <div className="App">
+                <Nav />
+                <Route path="/" exact component={Home} />
+                <Footer />
+            </div>
+        </Router>
     )
 }
 

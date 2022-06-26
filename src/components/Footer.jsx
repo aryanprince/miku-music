@@ -11,6 +11,15 @@ export default function Footer() {
                             <img src={Logo} className="footer__logo--img" alt="" />
                         </figure>
                     </a>
+                    <div className="footer__list">
+                        <a href="/" className="footer__link">Home</a>
+                        <a href="/about" className="footer__link">About</a>
+                        <a href="/books" className="footer__link">Books</a>
+                        <a href="/cart" className="footer__link">Cart</a>
+                    </div>
+                    <div className="footer__copyright">
+                        Copyright &copy; 2021 Library
+                    </div>
                 </div>
             </div>
         </footer>
