@@ -4,23 +4,28 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 export default function Book({ book }) {
     return (
         <div className="book">
+            {/* ------- BOOK IMAGE */}
             <a href="">
                 <figure className="book_img-wrapper">
                     <img src={book.url} alt="" />
                 </figure>
             </a>
+
+            {/* ------- BOOK TITLE */}
             <div className="book__title">
                 <a href="/" className="book__title--link">
                     {book.title}
                 </a>
             </div>
+
+            {/* ------- BOOK RATINGS */}
             <div className="book__ratings">
-                <FontAwesomeIcon icon="star" />
-                <FontAwesomeIcon icon="star" />
-                <FontAwesomeIcon icon="star" />
-                <FontAwesomeIcon icon="star" />
-                <FontAwesomeIcon icon="star-half-alt" />
+                {new Array(5).fill(0).map((_, index) => (
+                    <FontAwesomeIcon icon="star" key={index} />
+                ))}
             </div>
+
+            {/* ------- BOOK PRICE */}
             <div className="book__price">
                 {book.salePrice ? (
                     <>
