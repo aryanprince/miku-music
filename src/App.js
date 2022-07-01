@@ -7,6 +7,8 @@ import Nav from './components/Nav'
 
 import Books from './pages/Books'
 import Home from './pages/Home'
+import About from './pages/About'
+import BookInfo from './pages/BookInfo'
 
 function App() {
     return (
@@ -14,7 +16,9 @@ function App() {
             <div className="App">
                 <Nav />
                 <Route path="/" exact component={Home} />
+                <Route path="/about" component={About} />
                 <Route path="/books" render={() => <Books books={books} />} />
+                <Route path="/books/1" render={() => <BookInfo books={books} />} />
                 <Footer />
             </div>
         </Router>
