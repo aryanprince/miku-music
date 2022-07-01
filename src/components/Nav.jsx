@@ -5,10 +5,10 @@ import LibraryLogo from '../assets/Library.svg'
 
 export default function Nav() {
     function openMenu() {
-        document.body.classList += " menu--open"
+        document.body.classList += ' menu--open'
     }
     function closeMenu() {
-        document.body.classList.remove("menu--open")
+        document.body.classList.remove('menu--open')
     }
 
     return (
@@ -24,7 +24,7 @@ export default function Nav() {
                         </a>
                     </li>
                     <li className="nav__list">
-                        <a href="/" className="nav__link">
+                        <a href="/books" className="nav__link">
                             Books
                         </a>
                     </li>
