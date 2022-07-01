@@ -2,6 +2,8 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import React from 'react'
 import { Link } from 'react-router-dom'
 
+import Rating from '../components/ui/Rating'
+
 export default function BookInfo({ books }) {
     return (
         <div id="books__body">
@@ -15,6 +17,17 @@ export default function BookInfo({ books }) {
                             <Link to="/books" className="book__link">
                                 <h2 className="book__selected--title--top">Books</h2>
                             </Link>
+                        </div>
+
+                        <div className="book__selected">
+                            <figure className="book__selected--figure">
+                                <img src="https://covers.openlibrary.org/b/id/8091016-L.jpg" alt="" className="book__selected--img" />
+                            </figure>
+
+                            <div className="book__selected--description">
+                                <h2 className="book__selected--title">Crack the Coding Interview</h2>
+                                <Rating rating="4.5" />
+                            </div>
                         </div>
                     </div>
                 </div>
