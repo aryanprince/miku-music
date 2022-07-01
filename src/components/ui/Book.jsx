@@ -1,21 +1,22 @@
-import React from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import React from 'react'
+import { Link } from 'react-router-dom'
 
 export default function Book({ book }) {
     return (
         <div className="book">
             {/* ------- BOOK IMAGE */}
-            <a href="">
+            <Link to="">
                 <figure className="book_img-wrapper">
                     <img src={book.url} alt="" />
                 </figure>
-            </a>
+            </Link>
 
             {/* ------- BOOK TITLE */}
             <div className="book__title">
-                <a href="/" className="book__title--link">
+                <Link to="/" className="book__title--link">
                     {book.title}
-                </a>
+                </Link>
             </div>
 
             {/* ------- BOOK RATINGS */}
