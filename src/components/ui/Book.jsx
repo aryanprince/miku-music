@@ -10,17 +10,19 @@ export default function Book({ book }) {
     const mountedRef = useRef(true)
 
     useEffect(() => {
-        const image = new Image()
-        image.src = book.url
+        let mounted = true;
+        const image = new Image();
+        image.src = book.url;
         image.onload = () => {
             setTimeout(() => {
-                if (mountedRef.current) {
-                    setImg(image)
+                if (mounted) {
+                    setImg(image);
                 }
-            }, 300)
-        }
+            }, 300);
+        };
         return () => {
-            mountedRef.current = false
+            //When the component unmounts
+            mounted = false;
         }
     })
 
