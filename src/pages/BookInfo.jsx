@@ -55,7 +55,7 @@ export default function BookInfo({ books, addToCart, cart }) {
                                     </p>
 
                                     {bookExistsOnCart() ? (
-                                        <Link>
+                                        <Link to={`/cart`} className="book__link">
                                             <button className="btn">Checkout</button>
                                         </Link>
                                     ) : (
