@@ -3,7 +3,6 @@ import React from 'react'
 export default function Price({ salePrice, originalPrice }) {
     return (
         <>
-            {/* ------- BOOK PRICE */}
             <div className="book__price">
                 {salePrice ? (
                     <>

@@ -1,19 +1,19 @@
 import React from 'react'
 
 import { books } from '../data'
-
 import Book from './ui/Book'
 
 export default function Featured() {
     return (
-        // Maybe change featured to features
         <section id="featured">
             <div className="container">
                 <div className="row">
+                    {/* HEADER FOR FEATURED 4 BOOKS */}
                     <h2 className="section__title">
                         Featured <span className="purple">Books</span>
                     </h2>
 
+                    {/* DISPLAYS THE ACTUAL 4 FEATURED BOOKS */}
                     <div className="books">
                         {books
                             .filter((book) => book.rating === 5)

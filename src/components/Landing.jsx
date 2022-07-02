@@ -8,6 +8,7 @@ export default function Landing() {
         <section id="landing">
             <header>
                 <div className="header__container">
+                    {/* HEADER DESCRIPTION ON HOMEPAGE */}
                     <div className="header__description">
                         <h1>Australia's most awarded online library platform</h1>
                         <h2>
@@ -17,6 +18,8 @@ export default function Landing() {
                             <button className="btn">Browse books</button>
                         </Link>
                     </div>
+
+                    {/* HEADER IMAGE (SVG) ON HOMEPAGE */}
                     <figure className="header__img--wrapper">
                         <img src={UndrawBooks} alt="" />
                     </figure>

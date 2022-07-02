@@ -7,12 +7,12 @@ export default function Discounted() {
         <section id="recent">
             <div className="container">
                 <div className="row">
-                    {/* SECTION TITLE */}
+                    {/* TITLE FOR THE DISCOUNTED BOOKS */}
                     <h2 className="section__title">
                         Discounted <span className="purple">Books</span>
                     </h2>
 
-                    {/* DISCOUNTED BOOKS */}
+                    {/* ACTUAL DISCOUNTED BOOKS */}
                     <div className="books">
                         {books
                             .filter((book) => book.salePrice > 0)

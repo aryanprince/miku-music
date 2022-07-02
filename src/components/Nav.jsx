@@ -1,10 +1,11 @@
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import React from 'react'
 import { Link } from 'react-router-dom'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 import LibraryLogo from '../assets/Library.svg'
 
 export default function Nav() {
+    // FUNCTIONS TO OPEN AND CLOSE MOBILE NAVBAR
     function openMenu() {
         document.body.classList += ' menu--open'
     }
@@ -14,10 +15,14 @@ export default function Nav() {
 
     return (
         <nav>
+            {/* WHOLE NAVBAR */}
             <div className="nav__container">
+                {/* NAVBAR IMAGE */}
                 <Link to="/">
                     <img src={LibraryLogo} alt="" className="logo" />
                 </Link>
+
+                {/* MAIN NAVBAR */}
                 <ul className="nav__links">
                     <li className="nav__list">
                         <Link to="/" className="nav__link">
@@ -39,6 +44,8 @@ export default function Nav() {
                         <span className="cart__length">3</span>
                     </li>
                 </ul>
+
+                {/* MOBILE NAVBAR */}
                 <div className="menu__backdrop">
                     <button className="btn__menu btn__menu--close" onClick={closeMenu}>
                         <FontAwesomeIcon icon="times" />
