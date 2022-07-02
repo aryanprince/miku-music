@@ -4,7 +4,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 import LibraryLogo from '../assets/Library.svg'
 
-export default function Nav() {
+export default function Nav({ numberOfItems }) {
     // FUNCTIONS TO OPEN AND CLOSE MOBILE NAVBAR
     function openMenu() {
         document.body.classList += ' menu--open'
@@ -41,7 +41,7 @@ export default function Nav() {
                         <Link to="/cart" className="nav__link">
                             <FontAwesomeIcon icon="shopping-cart" />
                         </Link>
-                        <span className="cart__length">3</span>
+                        {numberOfItems > 0 && <span className="cart__length">{numberOfItems}</span>}
                     </li>
                 </ul>
 
