@@ -19,6 +19,11 @@ function App() {
         setCart([...cart, { ...book, quantity: 1 }])
     }
 
+    function removeItem(item) {
+        setCart(cart.filter((book) => book.id !== item.id))
+        console.log('removeItem', item)
+    }
+
     function changeQuantity(book, quantity) {
         setCart(
             cart.map((item) => {
@@ -47,7 +52,7 @@ function App() {
                     <Route path="/about" element={<About />} />
                     <Route path="/books" element={<Books books={books} />} />
                     <Route path="/books/:id" element={<BookInfo books={books} addToCart={addToCart} cart={cart} />} />
-                    <Route path="/cart" element={<Cart books={books} cart={cart} changeQuantity={changeQuantity} />} />
+                    <Route path="/cart" element={<Cart books={books} cart={cart} changeQuantity={changeQuantity} removeItem={removeItem} />} />
                 </Routes>
                 <Footer />
             </div>
