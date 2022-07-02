@@ -13,12 +13,13 @@ export default function Book({ book }) {
         const image = new Image()
         image.src = book.url
         image.onload = () => {
-            if (mountedRef.current) {
-                setImg(image)
-            }
+            setTimeout(() => {
+                if (mountedRef.current) {
+                    setImg(image)
+                }
+            }, 300)
         }
         return () => {
-            //When the component unmounts
             mountedRef.current = false
         }
     })
@@ -30,7 +31,7 @@ export default function Book({ book }) {
                     {/* BOOK IMAGE */}
                     <Link to={`/books/${book.id}`}>
                         <figure className="book_img-wrapper">
-                            <img src={img.src} alt="" />
+                            <img src={img.src} alt="" className="book__img" />
                         </figure>
                     </Link>
 
