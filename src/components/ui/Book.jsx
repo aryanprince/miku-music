@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
 
 import Price from './Price'
@@ -7,22 +7,20 @@ import Rating from './Rating'
 export default function Book({ book }) {
     const [img, setImg] = useState()
 
-    const mountedRef = useRef(true)
-
     useEffect(() => {
-        let mounted = true;
-        const image = new Image();
-        image.src = book.url;
+        let mounted = true
+        const image = new Image()
+        image.src = book.url
         image.onload = () => {
             setTimeout(() => {
                 if (mounted) {
-                    setImg(image);
+                    setImg(image)
                 }
-            }, 300);
-        };
+            }, 300)
+        }
         return () => {
             //When the component unmounts
-            mounted = false;
+            mounted = false
         }
     })
 
