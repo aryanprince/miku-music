@@ -14,7 +14,7 @@ export default function Landing() {
                         <h2>
                             Find your dream album with <span className="purple">Muki Music</span>
                         </h2>
-                        <Link to="#features">
+                        <Link to="/albums">
                             <button className="btn">Browse albums</button>
                         </Link>
                     </div>
