@@ -2,7 +2,7 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
-import LibraryLogo from '../assets/Library.svg'
+import LogoLight from '../assets/logo-light.png'
 
 export default function Nav({ numberOfItems }) {
     // FUNCTIONS TO OPEN AND CLOSE MOBILE NAVBAR
@@ -19,7 +19,7 @@ export default function Nav({ numberOfItems }) {
             <div className="nav__container">
                 {/* NAVBAR IMAGE */}
                 <Link to="/">
-                    <img src={LibraryLogo} alt="" className="logo" />
+                    <img src={LogoLight} alt="" className="logo" />
                 </Link>
 
                 {/* MAIN NAVBAR */}

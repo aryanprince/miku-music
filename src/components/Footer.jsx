@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 
-import Logo from '../assets/Library.svg'
+import LogoDark from '../assets/logo-dark.png'
 
 export default function Footer() {
     return (
@@ -10,7 +10,7 @@ export default function Footer() {
                 <div className="row row__column">
                     <Link to="/">
                         <figure className="footer__logo">
-                            <img src={Logo} className="footer__logo--img" alt="" />
+                            <img src={LogoDark} className="footer__logo--img" alt="" />
                         </figure>
                     </Link>
                     <div className="footer__list">
