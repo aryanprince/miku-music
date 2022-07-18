@@ -54,14 +54,9 @@ export default function BookInfo({ albums, addToCart, cart }) {
                                 {/* BOOK SUMMARY */}
                                 <div className="book__summary">
                                     <h3 className="book__summary--title">Summary</h3>
-                                    <p className="book__summary--para">
-                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque vel voluptates mollitia adipisci hic commodi id alias
-                                        obcaecati, provident quasi sequi nam! Numquam, obcaecati in nobis assumenda sed officia ducimus.
-                                    </p>
-                                    <p className="book__summary--para">
-                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque vel voluptates mollitia adipisci hic commodi id alias
-                                        obcaecati, provident quasi sequi nam! Numquam, obcaecati in nobis assumenda sed officia ducimus.
-                                    </p>
+                                    <p className="book__summary--para">{album.summary}</p>
+                                    <h3 className="book__summary--title">Details</h3>
+                                    <p className="book__summary--para">Release Year: {album.year} {album.songs} - {album.duration} </p>
 
                                     {/* ADD TO CART / CHECKOUT BUTTON */}
                                     {bookExistsOnCart() ? (

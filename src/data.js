@@ -104,6 +104,11 @@ export const albums = [
         title: 'After Hours',
         artist: 'The Weeknd',
         url: 'https://is5-ssl.mzstatic.com/image/thumb/Music125/v4/6f/bc/e6/6fbce6c4-c38c-72d8-4fd0-66cfff32f679/20UMGIM12176.rgb.jpg/600x600bb.jpg',
+        summary:
+            'Abel Tesfaye finally delivers on his long-running vision, leveraging a self-loathing villain into an irresistible, cinematic narrative with his most satisfying collision of new wave, dream pop, and R&B.',
+        songs: 14,
+        duration: '56:17',
+        year: '2020',
         originalPrice: 30,
         salePrice: 12.95,
         rating: 4.5,
