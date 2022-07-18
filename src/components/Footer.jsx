@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 
-import LogoDark from '../assets/logo-dark.png'
+import LogoDark from '../assets/logo_dark.png'
 
 export default function Footer() {
     return (

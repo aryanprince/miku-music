@@ -2,7 +2,7 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
-import LogoLight from '../assets/logo-light.png'
+import LogoLight from '../assets/logo_light.png'
 
 export default function Nav({ numberOfItems }) {
     // FUNCTIONS TO OPEN AND CLOSE MOBILE NAVBAR

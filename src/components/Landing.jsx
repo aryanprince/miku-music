@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 
-import UndrawBooks from '../assets/Undraw_Books.svg'
+import UndrawMusic from '../assets/Undraw_Music.svg'
 
 export default function Landing() {
     return (
@@ -21,7 +21,7 @@ export default function Landing() {
 
                     {/* HEADER IMAGE (SVG) ON HOMEPAGE */}
                     <figure className="header__img--wrapper">
-                        <img src={UndrawBooks} alt="" />
+                        <img src={UndrawMusic} alt="" />
                     </figure>
                 </div>
             </header>
