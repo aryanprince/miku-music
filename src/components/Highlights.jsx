@@ -20,9 +20,9 @@ export default function Highlights() {
                             para="Get access to the albums you purchased online instantly."
                         />
                         <Highlight
-                            icon={<FontAwesomeIcon icon="album-open" />}
+                            icon={<FontAwesomeIcon icon="record-vinyl" />}
                             title="10,000+ Albums"
-                            para="Library has albums in all your favourite categories."
+                            para="Muki Music has albums in all your favourite artists."
                         />
                         <Highlight icon={<FontAwesomeIcon icon="tags" />} title="Affordable" para="Get your hands on popular albums for as little as $10." />
                     </div>
