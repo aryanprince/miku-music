@@ -4,6 +4,7 @@
     margin: 0;
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
+    background-color: #242424;
 }
 
 .App {
@@ -25,7 +26,7 @@ nav {
     height: 80px;
     display: flex;
     box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.05);
-    background-color: white;
+    background-color: #242424;
     position: relative;
 }
 
@@ -215,6 +216,10 @@ button:active {
     color: white;
 }
 
+.section__title {
+    color:white;
+}
+
 /* 
 
 LANDING
@@ -243,6 +248,7 @@ header {
     display: flex;
     flex-direction: column;
     align-items: center;
+    color: white;
 }
 
 .header__img--wrapper {
@@ -292,9 +298,10 @@ HIGHLIGHTS
     max-width: 100vw;
 }
 
-#highlights:after,
+/* #highlights:after,
 #highlights:before {
     background: url('./assets/wave.svg');
+    background-color: #242424;
     content: '';
     position: absolute;
     width: 101vw;
@@ -313,7 +320,7 @@ HIGHLIGHTS
 #highlights:after {
     transform: translateY(100%) rotate(180deg);
     bottom: 1px;
-}
+} */
 
 .highlight__wrapper {
     display: flex;
@@ -327,6 +334,7 @@ HIGHLIGHTS
     align-items: center;
     flex-direction: column;
     text-align: center;
+    color: white;
 }
 
 .highlight__para {
@@ -361,7 +369,7 @@ FEATURED
 
 #featured {
     padding-top: 8vw;
-    background-color: rgba(115, 66, 214, 0.1);
+    background-color: #242424
 }
 
 .albums {
@@ -431,7 +439,8 @@ FEATURED
 }
 
 .book__title--link {
-    color: #242424;
+    color: white;
+
 }
 
 .book__artist {
@@ -440,7 +449,7 @@ FEATURED
 }
 
 .book__artist--link {
-    color: #242424;
+    color: white;
 }
 
 .book__artist--link:hover {
@@ -466,6 +475,7 @@ EXPLORE
 
 #explore {
     background-color: rgba(115, 66, 214, 0.1);
+    color: white;
 }
 
 /* 
@@ -645,6 +655,7 @@ select {
 .book__price {
     font-size: 16px;
     margin: 8px 0 24px 0;
+    color: white;
 }
 
 .link__breadcrumbs {
