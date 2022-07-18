@@ -56,7 +56,9 @@ export default function BookInfo({ albums, addToCart, cart }) {
                                     <h3 className="book__summary--title">Summary</h3>
                                     <p className="book__summary--para">{album.summary}</p>
                                     <h3 className="book__summary--title">Details</h3>
-                                    <p className="book__summary--para">Release Year: {album.year} {album.songs} - {album.duration} </p>
+                                    <p className="book__summary--para">
+                                        Release Year: {album.year} {album.songs} - {album.duration}{' '}
+                                    </p>
 
                                     {/* ADD TO CART / CHECKOUT BUTTON */}
                                     {bookExistsOnCart() ? (
@@ -83,7 +85,7 @@ export default function BookInfo({ albums, addToCart, cart }) {
 
                         <div className="albums">
                             {albums
-                                .filter((album) => album.rating === 5 && +album.id !== +id)
+                                .filter((album) => album.rating >= 4.5 && +album.id !== +id)
                                 .slice(0, 4)
                                 .map((album) => (
                                     <Album album={album} key={album.id} />
