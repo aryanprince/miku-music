@@ -8,12 +8,12 @@ export default function Explore() {
                 <div className="row row__column">
                     {/* HEADING FOR EXPLORING MORE BOOKS */}
                     <h2>
-                        Explore more <span className="purple">books</span>
+                        Explore more <span className="purple">albums</span>
                     </h2>
 
                     {/* THE ACTUAL BUTTON TO HYPERLINK TO MORE BOOKS */}
                     <Link to="/books">
-                        <button className="btn">Explore books</button>
+                        <button className="btn">Explore albums</button>
                     </Link>
                 </div>
             </div>

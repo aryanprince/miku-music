@@ -21,7 +21,7 @@ export default function Footer() {
                             About
                         </Link>
                         <Link to="/books" className="footer__link">
-                            Books
+                            Albums
                         </Link>
                         <Link to="/cart" className="footer__link">
                             Cart

@@ -9,7 +9,7 @@ export default function Highlights() {
                 <div className="row">
                     {/* HOMEPAGE HIGHLIGHTS */}
                     <h2 className="section__title">
-                        Why choose <span className="purple">Library</span>
+                        Why choose <span className="purple">Muki Music</span>
                     </h2>
 
                     {/* INDIVIDUAL COMPONENTS USED TO HIGHLIGHT FEATURES */}

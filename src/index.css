@@ -434,6 +434,19 @@ FEATURED
     color: #242424;
 }
 
+.book__artist {
+    font-size: 16px;
+    margin-bottom: 8px;
+}
+
+.book__artist--link {
+    color: #242424;
+}
+
+.book__artist--link:hover {
+    text-decoration: none;
+}
+
 .book__ratings {
     margin-bottom: 8px;
     color: #fabf2a;

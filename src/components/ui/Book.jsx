@@ -28,24 +28,31 @@ export default function Book({ book }) {
         <div className="book">
             {img ? (
                 <>
-                    {/* BOOK IMAGE */}
+                    {/* ALBUM ART */}
                     <Link to={`/books/${book.id}`}>
                         <figure className="book_img-wrapper">
                             <img src={img.src} alt="" className="book__img" />
                         </figure>
                     </Link>
 
-                    {/* BOOK TITLE */}
+                    {/* ALBUM TITLE */}
                     <div className="book__title">
                         <Link to={`/books/${book.id}`} className="book__title--link">
                             {book.title}
                         </Link>
                     </div>
 
-                    {/* BOOK RATING */}
+                    {/* ALBUM ARTIST */}
+                    <div className="book__artist">
+                        <Link to={`/books/${book.id}`} className="book__artist--link">
+                            {book.artist}
+                        </Link>
+                    </div>
+
+                    {/* ALBUM RATING */}
                     <Rating rating={book.rating} />
 
-                    {/* BOOK PRICE */}
+                    {/* ALBUM PRICE */}
                     <Price salePrice={book.salePrice} originalPrice={book.originalPrice} />
                 </>
             ) : (

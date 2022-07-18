@@ -10,12 +10,12 @@ export default function Landing() {
                 <div className="header__container">
                     {/* HEADER DESCRIPTION ON HOMEPAGE */}
                     <div className="header__description">
-                        <h1>UK's most awarded online library platform</h1>
+                        <h1>UK's flagship record store</h1>
                         <h2>
-                            Find you dream book with <span className="purple">Library</span>
+                            Find your dream album with <span className="purple">Muki Music</span>
                         </h2>
                         <Link to="#features">
-                            <button className="btn">Browse books</button>
+                            <button className="btn">Browse albums</button>
                         </Link>
                     </div>
 

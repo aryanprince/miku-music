@@ -9,7 +9,7 @@ export default function Discounted() {
                 <div className="row">
                     {/* TITLE FOR THE DISCOUNTED BOOKS */}
                     <h2 className="section__title">
-                        Discounted <span className="purple">Books</span>
+                        Discounted <span className="purple">Albums</span>
                     </h2>
 
                     {/* ACTUAL DISCOUNTED BOOKS */}

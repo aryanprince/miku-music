@@ -10,7 +10,7 @@ export default function Featured() {
                 <div className="row">
                     {/* HEADER FOR FEATURED 4 BOOKS */}
                     <h2 className="section__title">
-                        Featured <span className="purple">Books</span>
+                        Featured <span className="purple">Albums</span>
                     </h2>
 
                     {/* DISPLAYS THE ACTUAL 4 FEATURED BOOKS */}
