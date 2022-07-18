@@ -53,12 +53,11 @@ export default function BookInfo({ albums, addToCart, cart }) {
 
                                 {/* BOOK SUMMARY */}
                                 <div className="book__summary">
+                                    <p className="book__summary--para">
+                                        <i>{album.year} · {album.songs} songs · {album.duration}{' '}</i>
+                                    </p>
                                     <h3 className="book__summary--title">Summary</h3>
                                     <p className="book__summary--para">{album.summary}</p>
-                                    <h3 className="book__summary--title">Details</h3>
-                                    <p className="book__summary--para">
-                                        Release Year: {album.year} {album.songs} - {album.duration}{' '}
-                                    </p>
 
                                     {/* ADD TO CART / CHECKOUT BUTTON */}
                                     {bookExistsOnCart() ? (
