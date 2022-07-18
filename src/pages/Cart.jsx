@@ -22,23 +22,23 @@ export default function Cart({ cart, changeQuantity, removeItem }) {
 
                         <div className="cart">
                             <div className="cart__header">
-                                <span className="cart__book">Book</span>
+                                <span className="cart__book">Album</span>
                                 <span className="cart__quantity">Quantity</span>
                                 <span className="cart__total">Price</span>
                             </div>
 
                             {/* ACTUAL CART */}
                             <div className="cart__body">
-                                {cart.map((book) => {
+                                {cart.map((album) => {
                                     return (
                                         <div className="cart__item">
                                             {/* CART BOOK DETAILS */}
                                             <div className="cart__book">
-                                                <img src={book.url} alt="" className="cart__book--img" />
+                                                <img src={album.url} alt="" className="cart__book--img" />
                                                 <div className="cart__book--info">
-                                                    <span className="cart__book--title">{book.title}</span>
-                                                    <span className="cart__book--price">${(book.salePrice || book.originalPrice).toFixed(2)}</span>
-                                                    <button className="cart__book--remove" onClick={() => removeItem(book)}>
+                                                    <span className="cart__book--title">{album.title}</span>
+                                                    <span className="cart__book--price">${(album.salePrice || album.originalPrice).toFixed(2)}</span>
+                                                    <button className="cart__book--remove" onClick={() => removeItem(album)}>
                                                         Remove
                                                     </button>
                                                 </div>
@@ -50,12 +50,12 @@ export default function Cart({ cart, changeQuantity, removeItem }) {
                                                     min={0}
                                                     max={99}
                                                     className="cart__input"
-                                                    value={book.quantity}
-                                                    onChange={(event) => changeQuantity(book, event.target.value)}
+                                                    value={album.quantity}
+                                                    onChange={(event) => changeQuantity(album, event.target.value)}
                                                 />
                                             </div>
                                             {/* TOTAL = BOOK * QUANTITY */}
-                                            <div className="cart__total">${((book.salePrice || book.originalPrice) * book.quantity).toFixed(2)}</div>
+                                            <div className="cart__total">${((album.salePrice || album.originalPrice) * album.quantity).toFixed(2)}</div>
                                         </div>
                                     )
                                 })}
@@ -66,9 +66,9 @@ export default function Cart({ cart, changeQuantity, removeItem }) {
                             {cart.length === 0 && (
                                 <div className="cart__empty">
                                     <img src={EmptyCart} alt="" className="cart__empty--img" />
-                                    <h2>You don't have any books in your cart</h2>
-                                    <Link to="/books">
-                                        <button className="btn">Browse books</button>
+                                    <h2>You don't have any albums in your cart</h2>
+                                    <Link to="/albums">
+                                        <button className="btn">Browse albums</button>
                                     </Link>
                                 </div>
                             )}

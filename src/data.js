@@ -1,5 +1,5 @@
 // FAKE DATA
-export const books = [
+export const albums = [
     {
         id: 1,
         title: 'evermore',

@@ -14,9 +14,17 @@ export default function Highlights() {
 
                     {/* INDIVIDUAL COMPONENTS USED TO HIGHLIGHT FEATURES */}
                     <div className="highlight__wrapper">
-                        <Highlight icon={<FontAwesomeIcon icon="bolt" />} title="Easy and Quick" para="Get access to the books you purchased online instantly." />
-                        <Highlight icon={<FontAwesomeIcon icon="book-open" />} title="10,000+ Books" para="Library has books in all your favourite categories." />
-                        <Highlight icon={<FontAwesomeIcon icon="tags" />} title="Affordable" para="Get your hands on popular books for as little as $10." />
+                        <Highlight
+                            icon={<FontAwesomeIcon icon="bolt" />}
+                            title="Easy and Quick"
+                            para="Get access to the albums you purchased online instantly."
+                        />
+                        <Highlight
+                            icon={<FontAwesomeIcon icon="album-open" />}
+                            title="10,000+ Albums"
+                            para="Library has albums in all your favourite categories."
+                        />
+                        <Highlight icon={<FontAwesomeIcon icon="tags" />} title="Affordable" para="Get your hands on popular albums for as little as $10." />
                     </div>
                 </div>
             </div>

@@ -2,20 +2,20 @@ import React from 'react'
 import { Link, useParams } from 'react-router-dom'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
-import Book from '../components/ui/Book'
+import Album from '../components/ui/Album'
 import Price from '../components/ui/Price'
 import Rating from '../components/ui/Rating'
 
-export default function BookInfo({ books, addToCart, cart }) {
+export default function BookInfo({ albums, addToCart, cart }) {
     const { id } = useParams()
-    const book = books.find((book) => +book.id === +id)
+    const album = albums.find((album) => +album.id === +id)
 
-    function addBookToCart(book) {
-        addToCart(book)
+    function addBookToCart(album) {
+        addToCart(album)
     }
 
     function bookExistsOnCart() {
-        return cart.find((book) => book.id === +id)
+        return cart.find((album) => album.id === +id)
     }
 
     return (
@@ -25,11 +25,11 @@ export default function BookInfo({ books, addToCart, cart }) {
                     <div className="row">
                         {/* BACK BUTTON TO GO TO LIST OF BOOKS */}
                         <div className="book__selected--top">
-                            <Link to="/books" className="book__link">
+                            <Link to="/albums" className="book__link">
                                 <FontAwesomeIcon icon="arrow-left" />
                             </Link>
-                            <Link to="/books" className="book__link">
-                                <h2 className="book__selected--title--top">Books</h2>
+                            <Link to="/albums" className="book__link">
+                                <h2 className="book__selected--title--top">Albums</h2>
                             </Link>
                         </div>
 
@@ -37,30 +37,30 @@ export default function BookInfo({ books, addToCart, cart }) {
                         <div className="book__selected">
                             {/* BOOK IMAGE */}
                             <figure className="book__selected--figure">
-                                <img src={book.url} alt="" className="book__selected--img" />
+                                <img src={album.url} alt="" className="book__selected--img" />
                             </figure>
 
                             {/* BOOK DESCRIPTION */}
                             <div className="book__selected--description">
                                 {/* BOOK TITLE */}
-                                <h2 className="book__selected--title">{book.title}</h2>
+                                <h2 className="book__selected--title">{album.title}</h2>
                                 {/* BOOK RATING */}
-                                <Rating rating={book.rating} />
+                                <Rating rating={album.rating} />
                                 {/* BOOK PRICE */}
                                 <div className="book__selected--price">
-                                    <Price salePrice={book.salePrice} originalPrice={book.originalPrice} />
+                                    <Price salePrice={album.salePrice} originalPrice={album.originalPrice} />
                                 </div>
 
                                 {/* BOOK SUMMARY */}
                                 <div className="book__summary">
                                     <h3 className="book__summary--title">Summary</h3>
                                     <p className="book__summary--para">
-                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque vel voluptates mollitia adipisci hic commodi id alias obcaecati, provident quasi sequi nam!
-                                        Numquam, obcaecati in nobis assumenda sed officia ducimus.
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque vel voluptates mollitia adipisci hic commodi id alias
+                                        obcaecati, provident quasi sequi nam! Numquam, obcaecati in nobis assumenda sed officia ducimus.
                                     </p>
                                     <p className="book__summary--para">
-                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque vel voluptates mollitia adipisci hic commodi id alias obcaecati, provident quasi sequi nam!
-                                        Numquam, obcaecati in nobis assumenda sed officia ducimus.
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque vel voluptates mollitia adipisci hic commodi id alias
+                                        obcaecati, provident quasi sequi nam! Numquam, obcaecati in nobis assumenda sed officia ducimus.
                                     </p>
 
                                     {/* ADD TO CART / CHECKOUT BUTTON */}
@@ -69,7 +69,7 @@ export default function BookInfo({ books, addToCart, cart }) {
                                             <button className="btn">Checkout</button>
                                         </Link>
                                     ) : (
-                                        <button className="btn" onClick={() => addBookToCart(book)}>
+                                        <button className="btn" onClick={() => addBookToCart(album)}>
                                             Add to Cart
                                         </button>
                                     )}
@@ -83,15 +83,15 @@ export default function BookInfo({ books, addToCart, cart }) {
                 <div className="book__container">
                     <div className="row">
                         <div className="book__selected--top">
-                            <h2 className="book__selected--title--top">Recommended Books</h2>
+                            <h2 className="book__selected--title--top">Recommended Albums</h2>
                         </div>
 
-                        <div className="books">
-                            {books
-                                .filter((book) => book.rating === 5 && +book.id !== +id)
+                        <div className="albums">
+                            {albums
+                                .filter((album) => album.rating === 5 && +album.id !== +id)
                                 .slice(0, 4)
-                                .map((book) => (
-                                    <Book book={book} key={book.id} />
+                                .map((album) => (
+                                    <Album album={album} key={album.id} />
                                 ))}
                         </div>
                     </div>

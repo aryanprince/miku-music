@@ -1,6 +1,6 @@
 import React from 'react'
-import { books } from '../data'
-import Book from './ui/Book'
+import { albums } from '../data'
+import Album from './ui/Album'
 
 export default function Discounted() {
     return (
@@ -13,12 +13,12 @@ export default function Discounted() {
                     </h2>
 
                     {/* ACTUAL DISCOUNTED BOOKS */}
-                    <div className="books">
-                        {books
-                            .filter((book) => book.salePrice > 0)
+                    <div className="albums">
+                        {albums
+                            .filter((album) => album.salePrice > 0)
                             .slice(0, 8)
-                            .map((book) => (
-                                <Book book={book} key={book.id} />
+                            .map((album) => (
+                                <Album album={album} key={album.id} />
                             ))}
                     </div>
                 </div>

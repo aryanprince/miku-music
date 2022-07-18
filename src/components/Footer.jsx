@@ -20,7 +20,7 @@ export default function Footer() {
                         <Link to="/Linkbout" className="footer__link">
                             About
                         </Link>
-                        <Link to="/books" className="footer__link">
+                        <Link to="/albums" className="footer__link">
                             Albums
                         </Link>
                         <Link to="/cart" className="footer__link">

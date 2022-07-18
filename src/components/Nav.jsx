@@ -30,8 +30,8 @@ export default function Nav({ numberOfItems }) {
                         </Link>
                     </li>
                     <li className="nav__list">
-                        <Link to="/books" className="nav__link">
-                            Books
+                        <Link to="/albums" className="nav__link">
+                            Albums
                         </Link>
                     </li>
                     <button className="btn__menu" onClick={openMenu}>
@@ -57,8 +57,8 @@ export default function Nav({ numberOfItems }) {
                             </Link>
                         </li>
                         <li className="menu__list">
-                            <Link to="/books" className="menu__link">
-                                Books
+                            <Link to="/albums" className="menu__link">
+                                Albums
                             </Link>
                         </li>
                         <li className="menu__list">
