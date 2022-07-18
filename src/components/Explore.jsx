@@ -12,7 +12,7 @@ export default function Explore() {
                     </h2>
 
                     {/* THE ACTUAL BUTTON TO HYPERLINK TO MORE BOOKS */}
-                    <Link to="/books">
+                    <Link to="/albums">
                         <button className="btn">Explore albums</button>
                     </Link>
                 </div>

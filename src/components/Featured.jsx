@@ -1,7 +1,7 @@
 import React from 'react'
 
-import { books } from '../data'
-import Book from './ui/Book'
+import { albums } from '../data'
+import Album from './ui/Album'
 
 export default function Featured() {
     return (
@@ -14,12 +14,12 @@ export default function Featured() {
                     </h2>
 
                     {/* DISPLAYS THE ACTUAL 4 FEATURED BOOKS */}
-                    <div className="books">
-                        {books
-                            .filter((book) => book.rating === 5)
+                    <div className="albums">
+                        {albums
+                            .filter((album) => album.rating === 5)
                             .slice(0, 4)
-                            .map((book) => (
-                                <Book book={book} key={book.id} />
+                            .map((album) => (
+                                <Album album={album} key={album.id} />
                             ))}
                     </div>
                 </div>

@@ -4,13 +4,13 @@ import { Link } from 'react-router-dom'
 import Price from './Price'
 import Rating from './Rating'
 
-export default function Book({ book }) {
+export default function Album({ album }) {
     const [img, setImg] = useState()
 
     useEffect(() => {
         let mounted = true
         const image = new Image()
-        image.src = book.url
+        image.src = album.url
         image.onload = () => {
             setTimeout(() => {
                 if (mounted) {
@@ -25,11 +25,11 @@ export default function Book({ book }) {
     })
 
     return (
-        <div className="book">
+        <div className="album">
             {img ? (
                 <>
                     {/* ALBUM ART */}
-                    <Link to={`/books/${book.id}`}>
+                    <Link to={`/albums/${album.id}`}>
                         <figure className="book_img-wrapper">
                             <img src={img.src} alt="" className="book__img" />
                         </figure>
@@ -37,23 +37,23 @@ export default function Book({ book }) {
 
                     {/* ALBUM TITLE */}
                     <div className="book__title">
-                        <Link to={`/books/${book.id}`} className="book__title--link">
-                            {book.title}
+                        <Link to={`/albums/${album.id}`} className="book__title--link">
+                            {album.title}
                         </Link>
                     </div>
 
                     {/* ALBUM ARTIST */}
                     <div className="book__artist">
-                        <Link to={`/books/${book.id}`} className="book__artist--link">
-                            {book.artist}
+                        <Link to={`/albums/${album.id}`} className="book__artist--link">
+                            {album.artist}
                         </Link>
                     </div>
 
                     {/* ALBUM RATING */}
-                    <Rating rating={book.rating} />
+                    <Rating rating={album.rating} />
 
                     {/* ALBUM PRICE */}
-                    <Price salePrice={book.salePrice} originalPrice={book.originalPrice} />
+                    <Price salePrice={album.salePrice} originalPrice={album.originalPrice} />
                 </>
             ) : (
                 <>

@@ -1,26 +1,26 @@
 import { useEffect, useState } from 'react'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 
-import { books } from './data'
+import { albums } from './data'
 
 import Footer from './components/Footer'
 import Nav from './components/Nav'
 
 import About from './pages/About'
-import BookInfo from './pages/BookInfo'
-import Books from './pages/Books'
+import BookInfo from './pages/AlbumInfo'
+import Albums from './pages/Albums'
 import Cart from './pages/Cart'
 import Home from './pages/Home'
 
 function App() {
     const [cart, setCart] = useState([])
 
-    function addToCart(book) {
-        setCart([...cart, { ...book, quantity: 1 }])
+    function addToCart(album) {
+        setCart([...cart, { ...album, quantity: 1 }])
     }
 
     function removeItem(item) {
-        setCart(cart.filter((book) => book.id !== item.id))
+        setCart(cart.filter((album) => album.id !== item.id))
         console.log('removeItem', item)
     }
 
@@ -32,10 +32,10 @@ function App() {
         return counter
     }
 
-    function changeQuantity(book, quantity) {
+    function changeQuantity(album, quantity) {
         setCart(
             cart.map((item) => {
-                if (item.id === book.id) {
+                if (item.id === album.id) {
                     return {
                         ...item,
                         quantity: +quantity,
@@ -58,9 +58,9 @@ function App() {
                 <Routes>
                     <Route path="/" element={<Home />} />
                     <Route path="/about" element={<About />} />
-                    <Route path="/books" element={<Books books={books} />} />
-                    <Route path="/books/:id" element={<BookInfo books={books} addToCart={addToCart} cart={cart} />} />
-                    <Route path="/cart" element={<Cart books={books} cart={cart} changeQuantity={changeQuantity} removeItem={removeItem} />} />
+                    <Route path="/albums" element={<Albums albums={albums} />} />
+                    <Route path="/albums/:id" element={<BookInfo albums={albums} addToCart={addToCart} cart={cart} />} />
+                    <Route path="/cart" element={<Cart albums={albums} cart={cart} changeQuantity={changeQuantity} removeItem={removeItem} />} />
                 </Routes>
                 <Footer />
             </div>

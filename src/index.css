@@ -364,19 +364,19 @@ FEATURED
     background-color: rgba(115, 66, 214, 0.1);
 }
 
-.books {
+.albums {
     display: flex;
     flex-wrap: wrap;
     margin: 0 -24px;
 }
 
-.book {
+.album {
     width: 25%;
     padding: 24px;
     transition: all 300ms ease;
 }
 
-.book:hover {
+.album:hover {
     transform: translateY(-4px);
 }
 
@@ -570,7 +570,7 @@ select {
 
 /* 
 
-  book/:id
+  album/:id
     
 */
 
@@ -795,7 +795,7 @@ select {
         font-size: 18px;
     }
 
-    .book {
+    .album {
         width: 50%;
     }
 
