@@ -7,9 +7,9 @@ export const albums = [
         url: 'https://is5-ssl.mzstatic.com/image/thumb/Music114/v4/44/e3/94/44e3945f-d613-09f8-538a-aba063d59358/20UM1IM14847.rgb.jpg/600x600bb.jpg',
         summary:
             'Working again with Aaron Dessner, Swift challenges herself to find new dimensions within the moody atmosphere: fingerpicked ballads, colorful pop music, and her first country songs in years.',
-        songs: 14,
-        duration: '56:17',
-        year: '2020',
+        songs: 17,
+        duration: '1 hr 9 min',
+        year: '2021',
         originalPrice: 49.95,
         salePrice: 14.95,
         rating: 4.5,
@@ -20,8 +20,8 @@ export const albums = [
         artist: 'Jaden',
         url: 'https://is3-ssl.mzstatic.com/image/thumb/Music114/v4/96/19/da/9619da38-78f2-04b7-02b1-5e741500ceac/20UMGIM68982.rgb.jpg/600x600bb.jpg',
         summary: 'No summary yet',
-        songs: 14,
-        duration: '56:17',
+        songs: 17,
+        duration: '51 min 33 sec',
         year: '2020',
         originalPrice: 39,
         salePrice: null,
@@ -35,8 +35,8 @@ export const albums = [
         summary:
             "Made from afar, primarily with the National's Aaron Dessner, Swift's eighth album is a sweater-weather record filled with cinematic love songs and rich fictional details.",
 
-        songs: 14,
-        duration: '56:17',
+        songs: 17,
+        duration: '1 hr 7 min',
         year: '2020',
         originalPrice: 29,
         salePrice: null,
@@ -51,8 +51,8 @@ export const albums = [
             'The follow-up to Born to Die finds Lana Del Rey in ballad mode, finding new synergy between the character she presents to the world and the content of the songs. Producer Dan Auerbach of Black Keys turns out to be the perfect creative partner.',
 
         songs: 14,
-        duration: '56:17',
-        year: '2020',
+        duration: '1 hr 5 min',
+        year: '2014',
         originalPrice: 44,
         salePrice: 19,
         rating: 5,
@@ -65,9 +65,9 @@ export const albums = [
         summary:
             'The electronic duo Odesza are at the center of the current movement in stadium-filling “chill” music. Their latest is full of billowing vocal harmonies, seismic rumble, and turbo-charged trap beats.',
 
-        songs: 14,
-        duration: '56:17',
-        year: '2020',
+        songs: 25,
+        duration: '1 hr 34 min',
+        year: '2018',
         originalPrice: 32,
         salePrice: null,
         rating: 5,
