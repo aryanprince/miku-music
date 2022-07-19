@@ -12,7 +12,7 @@ export default function Landing() {
                     <div className="header__description">
                         <h1>UK's flagship record store</h1>
                         <h2>
-                            Find your dream album with <span className="purple">Muki Music</span>
+                            Find your dream album with <span className="purple">Miku Music</span>
                         </h2>
                         <Link to="/albums">
                             <button className="btn">Browse albums</button>
