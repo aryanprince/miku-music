@@ -492,6 +492,16 @@ footer {
     color: #fff;
 }
 
+.footer__copyright > a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.footer__copyright > a:hover {
+    text-decoration: underline;
+}
+
+
 .footer__list {
     margin: 20px 0 24px 0;
 }

@@ -27,7 +27,10 @@ export default function Footer() {
                             Cart
                         </Link>
                     </div>
-                    <div className="footer__copyright">Copyright &copy; 2021 Library</div>
+                    <div className="footer__copyright">
+                        &copy; 2022 Muki Music by{' '}
+                        <a href="https://github.com/aryanprince/">Aryan Prince</a>
+                    </div>
                 </div>
             </div>
         </footer>
